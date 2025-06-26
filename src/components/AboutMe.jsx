@@ -1,4 +1,5 @@
 import React from "react";
+import Icon from "./Icon";
 
 export default function AboutMe() {
 	return (
@@ -18,10 +19,12 @@ export default function AboutMe() {
 			<div className="techStack__container">
 				<h3 className="techStack__header">Tech Stack of Choice:</h3>
 				<ul className="techStack__list">
-					<li>React (It's what this site was done in!)</li>
-					<li>Node</li>
-					<li>Sass</li>
-					<li>Mongodb/Postgres</li>
+					<li className="techStack__item__react">
+						React (It's what this site was done in!)
+					</li>
+					<li className="techStack__item__node">Node</li>
+					<li className="techStack__item__sass">Sass</li>
+					<li className="techStack__item__postgres">Mongodb/Postgres</li>
 				</ul>
 			</div>
 			<p className="aboutMe__bodyText">

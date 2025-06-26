@@ -3,6 +3,13 @@
 	src: url(/src/styles/Agdasima-Regular.ttf);
 }
 
+$icons: (
+	"react": "src/img/icons/react.svg",
+	"node": "src/img/icons/node.svg",
+	"postgres": "src/img/icons/postgres.svg",
+	"sass": "src/img/icons/sass.svg",
+);
+
 :root {
 	--section-padding: 1.5rem;
 	--header-color: #fffded;
@@ -49,11 +56,11 @@ body {
 		background-color: #10f93f;
 		border: solid #10f93f75 2px;
 		letter-spacing: var(--default-spacing);
+
 		&:hover {
 			background-color: transparent;
 			border: solid #10f93f75 2px;
 			margin: 0;
-			box-shadow: inset #fffded;
 		}
 	}
 }
@@ -117,6 +124,16 @@ body {
 		letter-spacing: var(--default-spacing);
 		color: var(--text-color);
 		list-style: none;
+	}
+	&__item {
+		@each $name, $glyph in $icons {
+			&__#{$name} {
+				&::marker {
+					display: inline;
+					content: url($glyph);
+				}
+			}
+		}
 	}
 }
 .footer__container {

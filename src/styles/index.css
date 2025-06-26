@@ -54,7 +54,6 @@ body {
   background-color: transparent;
   border: solid rgba(16, 249, 63, 0.4588235294) 2px;
   margin: 0;
-  box-shadow: inset #fffded;
 }
 
 .main__container {
@@ -111,6 +110,22 @@ body {
   letter-spacing: var(--default-spacing);
   color: var(--text-color);
   list-style: none;
+}
+.techStack__item__react::marker {
+  display: inline;
+  content: url("src/img/icons/react.svg");
+}
+.techStack__item__node::marker {
+  display: inline;
+  content: url("src/img/icons/node.svg");
+}
+.techStack__item__postgres::marker {
+  display: inline;
+  content: url("src/img/icons/postgres.svg");
+}
+.techStack__item__sass::marker {
+  display: inline;
+  content: url("src/img/icons/sass.svg");
 }
 
 .footer__container {

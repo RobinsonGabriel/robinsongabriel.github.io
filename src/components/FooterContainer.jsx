@@ -8,8 +8,8 @@ export default function Footer() {
 				Social Icons made by:{" "}
 				<a href="https://github.com/chancancode/entypo-plus">John Gardener</a>
 			</p>
-			<Icon icon_path="src\img\github.svg" />
-			<Icon icon_path="src\img\linkedin.svg" />
+			<Icon icon_path="src\img\icons\github.svg" />
+			<Icon icon_path="src\img\icons\linkedin.svg" />
 		</footer>
 	);
 }
