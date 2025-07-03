@@ -6,7 +6,7 @@
   --section-padding: 1.5rem;
   --header-color: #fffded;
   --text-color: #ecebdd;
-  --paragraph-size: 1.6rem;
+  --paragraph-size: 1.8rem;
   --default-spacing: 1.92px;
 }
 
@@ -17,7 +17,7 @@ html {
 
 body {
   font-family: Agdasima;
-  background-color: #60575e;
+  background-color: #181818;
   margin: 0;
   padding: 0;
 }
@@ -31,7 +31,7 @@ body {
 .navbar__container {
   display: flex;
   justify-content: end;
-  background-color: #666;
+  background-color: #181818;
   height: 2.5rem;
   padding: var(--section-padding) 0 var(--section-padding) 0;
   width: 100%;
@@ -46,13 +46,13 @@ body {
   border-radius: 5px;
   text-decoration: none;
   color: var(--nav-text-color);
-  background-color: #10f93f;
-  border: solid rgba(16, 249, 63, 0.4588235294) 2px;
+  background-color: #33ff00;
+  border: solid #33ff00 2px;
   letter-spacing: var(--default-spacing);
 }
 .navOption__btn a:hover {
   background-color: transparent;
-  border: solid rgba(16, 249, 63, 0.4588235294) 2px;
+  border: solid #33ff00 2px;
   margin: 0;
 }
 
@@ -128,12 +128,32 @@ body {
   content: url("src/img/icons/sass.svg");
 }
 
+.footer__citation {
+  display: flex;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+.footer__citation_link {
+  color: inherit;
+  font-style: none;
+}
+.footer__citation_link:hover {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
 .footer__container {
-  margin-top: auto;
-  height: 2.5rem;
-  padding-bottom: var(--section-padding);
-  background-color: #403f4c;
+  display: flex;
+  flex-direction: column;
+  padding: var(--section-padding) 0 var(--section-padding) 0;
   color: var(--text-color);
+}
+.footer__container .icon__container {
+  display: flex;
+  justify-content: center;
+}
+.footer__container .icon__img {
+  padding: 0 0.5rem 0 0.5rem;
 }
 
 /*# sourceMappingURL=index.css.map */
