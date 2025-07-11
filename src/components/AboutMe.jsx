@@ -3,12 +3,12 @@ import Icon from "./Icon";
 
 export default function AboutMe() {
 	return (
-		<div className="aboutMe__container">
-			<h1 className="aboutMe__header">Gabriel Robinson</h1>
-			<h2 className="aboutMe__subHeader">
+		<div className="page__container">
+			<h1 className="page__header">Gabriel Robinson</h1>
+			<h2 className="page__subHeader">
 				I do stuff with computers (Hardware and software)
 			</h2>
-			<p className="aboutMe__bodyText">
+			<p className="page__bodyText">
 				Hello, I am just a guy that finds a lot of the facets of technology
 				really fascinating. I've been interested in gettings things to work ever
 				since I was really little. From setting up the family electronics when I
@@ -27,7 +27,7 @@ export default function AboutMe() {
 					<li className="techStack__item__postgres">Mongodb/Postgres</li>
 				</ul>
 			</div>
-			<p className="aboutMe__bodyText">
+			<p className="page__bodyText">
 				I've worked on a diverse array of enterprise gear in data centers around
 				the area and found it highly valuable to see how the sausage (or data)
 				gets made. Having that larger picture of what is actually going on when
@@ -36,7 +36,7 @@ export default function AboutMe() {
 				when I am studying anything new or writing code that not everyone will
 				get the chance to make use of and I'm grateful for it!
 			</p>
-			<p className="aboutMe__bodyText">
+			<p className="page__bodyText">
 				I do my best to not overspecialize and have a strong interest in
 				mycology, philosophy, the visual arts, and a lot of other little niche
 				interests I try to entertain to keep my brain active and let me enjoy

@@ -3,6 +3,21 @@
 	src: url(/src/styles/Agdasima-Regular.ttf);
 }
 
+@keyframes button__hover {
+	0% {
+		transform: translate(0%, 0%);
+		box-shadow: 1px 1px 5px #67ff42;
+	}
+	50% {
+		transform: translate(0%, -5%);
+		box-shadow: 1px 1px 3px #68ff4270;
+	}
+	100% {
+		transform: translate(0%, 0%);
+		box-shadow: 1px 1px 5px #67ff42;
+	}
+}
+
 $icons: (
 	"react": "src/img/icons/react.svg",
 	"node": "src/img/icons/node.svg",
@@ -48,6 +63,7 @@ body {
 .navOption__btn {
 	margin: 0 1rem 0 1rem;
 	a {
+		display: block;
 		font-size: var(--paragraph-size);
 		padding: 0.75rem;
 		border-radius: 5px;
@@ -58,9 +74,13 @@ body {
 		letter-spacing: var(--default-spacing);
 
 		&:hover {
-			background-color: transparent;
+			background-color: #9dff85;
 			border: solid #33ff00 2px;
 			margin: 0;
+			animation-name: button__hover;
+			animation-duration: 1.5s;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease-in-out;
 		}
 	}
 }
@@ -85,7 +105,7 @@ body {
 	box-shadow: 2px 1px 10px;
 }
 
-.aboutMe {
+.page {
 	&__container {
 		padding: 0 10rem 0 5rem;
 	}
@@ -128,6 +148,7 @@ body {
 	&__item {
 		@each $name, $glyph in $icons {
 			&__#{$name} {
+				padding-left: 0.5rem;
 				&::marker {
 					display: inline;
 					content: url($glyph);
@@ -164,6 +185,12 @@ body {
 			}
 			&__img {
 				padding: 0 0.5rem 0 0.5rem;
+				&:hover {
+					cursor: pointer;
+				}
+				&:focus {
+					cursor: pointer;
+				}
 			}
 		}
 	}

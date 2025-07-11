@@ -2,6 +2,20 @@
   font-family: Agdasima;
   src: url(/src/styles/Agdasima-Regular.ttf);
 }
+@keyframes button__hover {
+  0% {
+    transform: translate(0%, 0%);
+    box-shadow: 1px 1px 5px #67ff42;
+  }
+  50% {
+    transform: translate(0%, -5%);
+    box-shadow: 1px 1px 3px rgba(104, 255, 66, 0.4392156863);
+  }
+  100% {
+    transform: translate(0%, 0%);
+    box-shadow: 1px 1px 5px #67ff42;
+  }
+}
 :root {
   --section-padding: 1.5rem;
   --header-color: #fffded;
@@ -41,6 +55,7 @@ body {
   margin: 0 1rem 0 1rem;
 }
 .navOption__btn a {
+  display: block;
   font-size: var(--paragraph-size);
   padding: 0.75rem;
   border-radius: 5px;
@@ -51,9 +66,13 @@ body {
   letter-spacing: var(--default-spacing);
 }
 .navOption__btn a:hover {
-  background-color: transparent;
+  background-color: #9dff85;
   border: solid #33ff00 2px;
   margin: 0;
+  animation-name: button__hover;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 .main__container {
@@ -76,23 +95,23 @@ body {
   max-height: 45rem;
 }
 
-.aboutMe__container {
+.page__container {
   padding: 0 10rem 0 5rem;
 }
-.aboutMe__header {
+.page__header {
   font-size: 3.6rem;
   font-weight: 600;
   letter-spacing: var(--default-spacing);
   color: var(--header-color);
 }
-.aboutMe__subHeader {
+.page__subHeader {
   font-weight: 600;
   font-size: 2.8rem;
   letter-spacing: var(--default-spacing);
   color: var(--header-color);
   padding-bottom: 1.2rem;
 }
-.aboutMe__bodyText {
+.page__bodyText {
   color: var(--header-color);
   font-size: var(--paragraph-size);
   line-height: 1.4;
@@ -111,17 +130,29 @@ body {
   color: var(--text-color);
   list-style: none;
 }
+.techStack__item__react {
+  padding-left: 0.5rem;
+}
 .techStack__item__react::marker {
   display: inline;
   content: url("src/img/icons/react.svg");
+}
+.techStack__item__node {
+  padding-left: 0.5rem;
 }
 .techStack__item__node::marker {
   display: inline;
   content: url("src/img/icons/node.svg");
 }
+.techStack__item__postgres {
+  padding-left: 0.5rem;
+}
 .techStack__item__postgres::marker {
   display: inline;
   content: url("src/img/icons/postgres.svg");
+}
+.techStack__item__sass {
+  padding-left: 0.5rem;
 }
 .techStack__item__sass::marker {
   display: inline;
@@ -154,6 +185,12 @@ body {
 }
 .footer__container .icon__img {
   padding: 0 0.5rem 0 0.5rem;
+}
+.footer__container .icon__img:hover {
+  cursor: pointer;
+}
+.footer__container .icon__img:focus {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=index.css.map */
