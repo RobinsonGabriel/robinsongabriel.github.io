@@ -73,7 +73,8 @@ body {
 		border: solid #33ff00 2px;
 		letter-spacing: var(--default-spacing);
 
-		&:hover {
+		&:hover,
+		&:focus {
 			background-color: #9dff85;
 			border: solid #33ff00 2px;
 			margin: 0;

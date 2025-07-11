@@ -65,7 +65,7 @@ body {
   border: solid #33ff00 2px;
   letter-spacing: var(--default-spacing);
 }
-.navOption__btn a:hover {
+.navOption__btn a:hover, .navOption__btn a:focus {
   background-color: #9dff85;
   border: solid #33ff00 2px;
   margin: 0;
