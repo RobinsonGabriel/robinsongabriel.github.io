@@ -1,5 +1,5 @@
 import React from "react";
-import profileUrl from "..img/ivan_seal_painting.webp";
+import profileUrl from ".img/ivan_seal_painting.webp";
 
 function ProfilePic() {
 	return (
