@@ -14,8 +14,8 @@ export default function Footer() {
 				</a>
 			</p>
 			<span className="icon__container">
-				<Icon icon_path="src\img\icons\github.svg" />
-				<Icon icon_path="src\img\icons\linkedin.svg" />
+				<Icon icon_path="\img\icons\github.svg" />
+				<Icon icon_path="\img\icons\linkedin.svg" />
 			</span>
 		</footer>
 	);
