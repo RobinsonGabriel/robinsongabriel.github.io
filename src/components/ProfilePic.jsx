@@ -1,5 +1,4 @@
 import React from "react";
-import profileUrl from "src/img/ivan_seal_painting.webp";
 
 function ProfilePic() {
 	return (
@@ -7,7 +6,7 @@ function ProfilePic() {
 			<div clasname="profilePic__container">
 				<img
 					className="profilePic"
-					src={`${profileUrl}`}
+					src="/ivan_seal_painting.webp"
 					alt="picture_by_ https://www.instagram.com/ivanseal/?hl=en"
 				/>
 			</div>
