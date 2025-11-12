@@ -7,7 +7,7 @@ function ProfilePic() {
 			<div clasname="profilePic__container">
 				<img
 					className="profilePic"
-					src={`${profileUrl}`}
+					src="src\img\ivan_seal_painting.webp"
 					alt="picture_by_ https://www.instagram.com/ivanseal/?hl=en"
 				/>
 			</div>
